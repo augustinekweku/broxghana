@@ -1,5 +1,7 @@
 "use client";
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import { slideAnimation } from "../utils/motion";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
@@ -27,7 +29,10 @@ const Navbar = () => {
         <div className="logo">
           <img src="/assets/images/broxtech-logo.svg" alt="logo here" />
         </div>
-        <div className="nav-menu hidden lg:flex ">
+        <motion.div
+          className="nav-menu hidden lg:flex "
+          {...slideAnimation("left")}
+        >
           <ul>
             <li>
               <a href="#ourWork" id="work">
@@ -55,7 +60,7 @@ const Navbar = () => {
               </button>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
 
       <button className="talkToUsBtn  talkToUsBtnDesktop hidden lg:flex">
