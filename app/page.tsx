@@ -21,7 +21,7 @@ export default function Home() {
                 className="container px-3 mx-auto pt-24"
                 {...slideAnimation("left")}
               >
-                <div className="w-100 lg:w-3/4">
+                <div className="w-100 lg:w-3/4 pt-20">
                   <div className="text-white mb-5 ">
                     <motion.h2
                       {...headTextAnimation}
