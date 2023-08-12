@@ -14,12 +14,10 @@ export default function Home() {
       <main>
         <div>
           {/* <!-- HEADER SECTION --> */}
-          <header className="nav">
-            <section className="container px-3 mx-auto  navbar pb-8 pt-4">
-              <Navbar />
-            </section>
+          <header className="header">
+            <Navbar />
             <motion.section
-              className="container px-3 mx-auto pt-5"
+              className="container px-3 mx-auto pt-24"
               {...slideAnimation("left")}
             >
               <div className="w-100 lg:w-3/4">
@@ -95,7 +93,7 @@ export default function Home() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-6">
-              <div className="service web">
+              <motion.div {...slideAnimation("left")} className="service web">
                 <img src="assets/images/globe-01.svg" alt="logo" />
                 <div className="">
                   <h2>Web Development</h2>
@@ -104,9 +102,12 @@ export default function Home() {
                     platform to have a presence in the digital world.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="service custom">
+              <motion.div
+                {...slideAnimation("left")}
+                className="service custom"
+              >
                 <img src="assets/images/browser.svg" alt="logo" />
                 <div className="">
                   <h2>Custom Software Development</h2>
@@ -115,9 +116,12 @@ export default function Home() {
                     become expert in no time.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="service mobile">
+              <motion.div
+                {...slideAnimation("left")}
+                className="service mobile"
+              >
                 <img src="assets/images/phone-01.svg" alt="logo" />
                 <div className="">
                   <h2>Mobile Development</h2>
@@ -126,9 +130,12 @@ export default function Home() {
                     to boost profitability.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="service chatbot">
+              <motion.div
+                {...slideAnimation("left")}
+                className="service chatbot"
+              >
                 <img src="assets/images/message-chat-circle.svg" alt="logo" />
                 <div className="">
                   <h2>Chatbot Solutions</h2>
@@ -137,9 +144,12 @@ export default function Home() {
                     leaving their comfort zone through whatsApp.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="service bulkSMS">
+              <motion.div
+                {...slideAnimation("left")}
+                className="service bulkSMS"
+              >
                 <img
                   src="assets/images/message-text-square-01.svg"
                   alt="logo"
@@ -152,9 +162,12 @@ export default function Home() {
                     SMS today.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="service design">
+              <motion.div
+                {...slideAnimation("left")}
+                className="service design"
+              >
                 <img src="assets/images/clapperboard.svg" alt="logo" />
                 <div className="">
                   <h2>UI/UX Design</h2>
@@ -164,18 +177,18 @@ export default function Home() {
                     SMS today.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="service brand">
+              <motion.div {...slideAnimation("left")} className="service brand">
                 <img src="assets/images/chart-breakout-circle.svg" alt="logo" />
                 <h2>Branding</h2>
                 <p>
                   Own an awesome and user friendly website accross all platform
                   to have a presence in the digital world.
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="service ussd">
+              <motion.div {...slideAnimation("left")} className="service ussd">
                 <img src="assets/images/phone-02.svg" alt="logo" />
                 <div className="">
                   <h2>USSD (Short Code) Solutions</h2>
@@ -185,9 +198,9 @@ export default function Home() {
                     the USSD.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="service momo">
+              <motion.div {...slideAnimation("left")} className="service momo">
                 <img src="assets/images/credit-card-01.svg" alt="logo" />
                 <div className="">
                   <h2>Mobile Money Integration</h2>
@@ -197,7 +210,7 @@ export default function Home() {
                     offerings.
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </section>
 

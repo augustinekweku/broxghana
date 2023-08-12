@@ -19,6 +19,10 @@ html {
 
 $deep-primary-blue: #001d62;
 
+.bg-primary-blue {
+  background-color: $deep-primary-blue;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
@@ -26,46 +30,18 @@ body {
 
 // STYLES FOR RESPONSIVE NAV
 
-.nav {
-  .hamburger-menu {
-    width: 22px;
-    height: 16px;
-    cursor: pointer;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    gap: 15px;
-    margin: 20px;
-    span {
-      display: block;
-      margin-bottom: 5px;
-      width: 100%;
-      height: 2px;
-      border-radius: 99px;
-      background: #fff;
-      transition: 0.3s ease;
-      transform-origin: left;
-    }
-  }
-}
-
-.hamburger-menu-active {
-  ul {
-    background: white !important;
-    flex-direction: column !important;
-    position: absolute !important;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 90px;
-    a {
-      color: $deep-primary-blue !important;
-    }
-  }
-}
-
 // END  STYLES FOR RESPONSIVE NAV
+
+#nav {
+  .new-badge {
+    color: #027a48;
+    font-weight: 600;
+    margin-left: 0.5em;
+    background-color: #ecfdf3;
+    border-radius: 1em;
+    padding: 0.125em 0.5em;
+  }
+}
 
 /* header section */
 
@@ -73,41 +49,9 @@ header {
   background-color: var(--color-a);
 }
 
-header .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-}
-
 header .navbar .navContent1 {
   display: flex;
   align-items: center;
-}
-
-header .navContent1 .logo {
-  display: flex;
-}
-
-header .navbar .nav-menu {
-  margin-left: 2.75em;
-}
-
-header .navbar .nav-menu ul {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-header .navbar .nav-menu li {
-  list-style: none;
-  padding: 3em;
-}
-
-header .navbar .nav-menu li a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
 }
 
 header .navbar .nav-menu li span {
@@ -117,15 +61,6 @@ header .navbar .nav-menu li span {
   background-color: #ecfdf3;
   border-radius: 1em;
   padding: 0.125em 0.5em;
-}
-
-.talkToUsBtn {
-  color: black;
-  border-radius: 62.5em;
-  font-weight: 500;
-  background-color: white;
-  padding: 0.625em 1.5em;
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 /* Header content Info */
