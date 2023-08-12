@@ -1,113 +1,250 @@
-import Image from 'next/image'
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main>
+      <div>
+        {/* <!-- HEADER SECTION --> */}
+        <header className="nav">
+          <section className="container px-3 mx-auto  navbar pb-8 pt-4">
+            <Navbar />
+          </section>
+          <section className="container px-3 mx-auto pt-5 ">
+            <div className="w-100 lg:w-3/4">
+              <div className="text-white mb-5 ">
+                <h2
+                  className="mb-4 font-semibold md:text-5xl text-3xl"
+                  style={{ lineHeight: "1.25 !important" }}
+                >
+                  Creating the best digital <br />
+                  experience for businesses
+                </h2>
+                <p className="lg:text-2xl text-lg">
+                  Brox is creating a strategic technology for large and small
+                  scale businesses to trive with the right solution. We’re
+                  building the future of technology
+                </p>
+              </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+              <div className="pb-20">
+                <video src="" width="1030" className="w-100"></video>
+              </div>
+            </div>
+          </section>
+        </header>
+        {/* <!-- MAIN SECTION --> */}
+        {/* <!-- OUR WORKS --> */}
+        <section
+          style={{ backgroundColor: "#f9fafb" }}
+          className="ourWorksSection pb-14"
+          id="ourWork"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className="container px-3 mx-auto pt-12">
+            <h2 className="text-2xl lg:text-4xl font-medium">Our Works</h2>
+            <div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-between items-center mt-5 Card1">
+                <div className="resPOS">
+                  <img src="assets/images/img1.png" alt="img here" />
+                  <h2 className="mt-2 text-base">Restaurant POS System</h2>
+                </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                <div className="resultsChecker">
+                  <img src="assets/images/img2.png" alt="img here" />
+                  <h2 className="mt-2 text-base">
+                    WASSCE / GES Result Checker
+                  </h2>
+                </div>
+                <div className="sMS">
+                  <img src="assets/images/img3.png" alt="img here" />
+                  <h2 className="mt-2 text-base">School Management System</h2>
+                </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+                <div className="posSYSTEM">
+                  <img src="assets/images/img4.png" alt="img here" />
+                  <h2 className="mt-2 text-base">
+                    Point of Sale Software(POS)
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- CORE SERVICES --> */}
+        <section
+          className="container ourWorksSection px-3 mx-auto pt-12 pb-8"
+          id="coreServices"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+          <h2 className="text-2xl lg:text-4xl font-medium mb-5">
+            Core Services
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="service web">
+              <img src="assets/images/globe-01.svg" alt="logo" />
+              <div className="">
+                <h2>Web Development</h2>
+                <p>
+                  Own an awesome and user friendly website accross all platform
+                  to have a presence in the digital world.
+                </p>
+              </div>
+            </div>
+
+            <div className="service custom">
+              <img src="assets/images/browser.svg" alt="logo" />
+              <div className="">
+                <h2>Custom Software Development</h2>
+                <p>
+                  Equip yourself with the basics of Information Technology and
+                  become expert in no time.
+                </p>
+              </div>
+            </div>
+
+            <div className="service mobile">
+              <img src="assets/images/phone-01.svg" alt="logo" />
+              <div className="">
+                <h2>Mobile Development</h2>
+                <p>
+                  Get an industry leading mobile application for your business
+                  to boost profitability.
+                </p>
+              </div>
+            </div>
+
+            <div className="service chatbot">
+              <img src="assets/images/message-chat-circle.svg" alt="logo" />
+              <div className="">
+                <h2>Chatbot Solutions</h2>
+                <p>
+                  Keep your prospects informed, engaged and connected without
+                  leaving their comfort zone through whatsApp.
+                </p>
+              </div>
+            </div>
+
+            <div className="service bulkSMS">
+              <img src="assets/images/message-text-square-01.svg" alt="logo" />
+              <div className="">
+                <h2>Bulk SMS</h2>
+                <p>
+                  Keep your customers and clients updated on your services and
+                  products through sms. It’s Fast and Reliable. Try Brox Bulk
+                  SMS today.
+                </p>
+              </div>
+            </div>
+
+            <div className="service design">
+              <img src="assets/images/clapperboard.svg" alt="logo" />
+              <div className="">
+                <h2>UI/UX Design</h2>
+                <p>
+                  Keep your customers and clients updated on your services and
+                  products through sms. It’s Fast and Reliable. Try Brox Bulk
+                  SMS today.
+                </p>
+              </div>
+            </div>
+
+            <div className="service brand">
+              <img src="assets/images/chart-breakout-circle.svg" alt="logo" />
+              <h2>Branding</h2>
+              <p>
+                Own an awesome and user friendly website accross all platform to
+                have a presence in the digital world.
+              </p>
+            </div>
+
+            <div className="service ussd">
+              <img src="assets/images/phone-02.svg" alt="logo" />
+              <div className="">
+                <h2>USSD (Short Code) Solutions</h2>
+                <p>
+                  Let your customers place orders for your products using a USSD
+                  code and make payment via Mobile Money directly from the USSD.
+                </p>
+              </div>
+            </div>
+
+            <div className="service momo">
+              <img src="assets/images/credit-card-01.svg" alt="logo" />
+              <div className="">
+                <h2>Mobile Money Integration</h2>
+                <p>
+                  Collect payment officially using mobile money and reach wide
+                  audience. We help you to integrate MoMo into your service
+                  offerings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* <!-- ABOUT US --> */}
+
+        <section
+          style={{ backgroundColor: "#f9fafb" }}
+          className="aboutUS pb-24 pt-8"
+          id="aboutUs"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div className="container px-3 mx-auto pt-12">
+            <div className="flex flex-col lg:flex-row items-center gap-4">
+              <div className="info1 flex-auto w-100 lg:w-28">
+                <h2 className="text-2xl lg:text-4xl font-medium mb-6">
+                  About Us
+                </h2>
+                <p className="lg:text-2xl text-lg">
+                  We focus on Customer Commitment, Integrity, and Team work.
+                  Brox Technology is a privately owned company which was
+                  established in the year 2018. Our core values include
+                </p>
+              </div>
+
+              <div className="info2 w-100 lg:w-50">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="assets/images/Frame 17image.svg"
+                  className="w-full"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer className="bg-black">
+          <section className="contactUs pb-14">
+            <div className=" container px-3 mx-auto pt-12">
+              <div className=" conContainer flex flex-col lg:flex-row gap-5 pb-8 mb-8 items-start lg:items-center justify-between">
+                <div className="con Info">
+                  <h2 className="!text-white text-xl lg:text-2xl xl:text-3xl   font-medium ">
+                    GET IN TOUCH
+                  </h2>
+                  <p className="pt-1 text-base">
+                    info@broxghana.com <br />
+                    +233 54 410 8998
+                  </p>
+                </div>
+
+                <div className="con Info">
+                  <h2 className="!text-white text-xl lg:text-2xl xl:text-3xl  font-medium">
+                    Brox Technologies
+                  </h2>
+                  <p className="pt-1 text-base">
+                    We focus on Customer Commitment, Integrity, and Team work.
+                  </p>
+                </div>
+              </div>
+
+              <div className="copyRight pt-3">
+                <h2 className="!text-white text-xs">
+                  © 2022 Brox Technology. All Rights Reserved
+                </h2>
+              </div>
+            </div>
+          </section>
+        </footer>
       </div>
     </main>
-  )
+  );
 }
