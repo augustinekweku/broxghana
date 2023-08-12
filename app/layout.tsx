@@ -16,6 +16,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Brox technology </title>
+        <link
+          rel="icon"
+          href="/assets/images/brox-icon.svg"
+          type="image/png"
+          sizes="32x32"
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
