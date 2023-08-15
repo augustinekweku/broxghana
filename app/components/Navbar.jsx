@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="shadow-md w-full fixed top-0 left-0 bg-primary-blue"
+      className="shadow-md w-full fixed top-0 left-0 bg-primary-blue z-50"
       id="nav"
     >
       <div className="container mx-auto ">

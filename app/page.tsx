@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
@@ -7,6 +8,35 @@ import {
   headTextAnimation,
   slideAnimation,
 } from "./utils/motion";
+import Image from "next/image";
+
+export const OUR_WORKS = [
+  {
+    title: "Restaurant POS System",
+    image: "/assets/images/img1.png",
+    description:
+      "Brox Restaurant POS System is a software that helps restaurant owners to manage their business effectively. It is a user friendly software that can be used by anyone with little or no knowledge in IT. It is a cloud based software that can be accessed anywhere and anytime. It is a software that can be used by any restaurant owner to manage their business effectively. It is a user friendly software that can be used by anyone with little or no knowledge in IT. It is a cloud based software that can be accessed anywhere and anytime.",
+    detailsPage: "/restaurant-pos-system",
+  },
+  {
+    title: "WASSCE / GES Result Checker",
+    image: "/assets/images/img2.png",
+    description: "",
+    detailsPage: "/wassce-ges-result-checker",
+  },
+  {
+    title: "School Management System",
+    image: "/assets/images/img3.png",
+    description: "",
+    detailsPage: "/school-management-system",
+  },
+  {
+    title: "Point of Sale Software(POS)",
+    image: "/assets/images/img4.png",
+    description: "",
+    detailsPage: "/point-of-sale-software",
+  },
+];
 
 export default function Home() {
   return (
@@ -57,31 +87,21 @@ export default function Home() {
               <div className="container px-3 mx-auto pt-12">
                 <h2 className="text-2xl lg:text-4xl font-medium">Our Works</h2>
                 <div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-between items-center mt-5 Card1">
-                    <div className="resPOS">
-                      <img src="assets/images/img1.png" alt="img here" />
-                      <h2 className="mt-2 text-base">Restaurant POS System</h2>
-                    </div>
-
-                    <div className="resultsChecker">
-                      <img src="assets/images/img2.png" alt="img here" />
-                      <h2 className="mt-2 text-base">
-                        WASSCE / GES Result Checker
-                      </h2>
-                    </div>
-                    <div className="sMS">
-                      <img src="assets/images/img3.png" alt="img here" />
-                      <h2 className="mt-2 text-base">
-                        School Management System
-                      </h2>
-                    </div>
-
-                    <div className="posSYSTEM">
-                      <img src="assets/images/img4.png" alt="img here" />
-                      <h2 className="mt-2 text-base">
-                        Point of Sale Software(POS)
-                      </h2>
-                    </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-between items-center mt-5 Card1">
+                    {OUR_WORKS.map((work, index) => (
+                      <div key={index}>
+                        <div className="workImg">
+                          <Image
+                            src={work.image}
+                            alt="img here"
+                            loading="lazy"
+                            objectFit="cover"
+                            fill
+                          />
+                        </div>
+                        <h2 className="mt-2 text-base">{work.title}</h2>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
