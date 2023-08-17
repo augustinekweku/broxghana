@@ -99,8 +99,12 @@ export default function Home() {
                   <div className="">
                     <h2>Web Development</h2>
                     <p>
-                      Own an awesome and user friendly website accross all
-                      platform to have a presence in the digital world.
+                      Brox Technology specializes in creating dynamic and
+                      responsive websites tailored to your business needs. Our
+                      skilled team of developers employs the latest technologies
+                      to craft engaging and user-friendly web solutions that
+                      effectively showcase your products, services, and brand
+                      identity.
                     </p>
                   </div>
                 </motion.div>
@@ -113,8 +117,13 @@ export default function Home() {
                   <div className="">
                     <h2>Custom Software Development</h2>
                     <p>
-                      Equip yourself with the basics of Information Technology
-                      and become expert in no time.
+                      At Brox Technology, we understand that every business has
+                      unique requirements. Our custom software development
+                      services empower you to optimize your processes, enhance
+                      efficiency, and streamline operations. We work closely
+                      with you to design, develop, and implement software
+                      solutions that align perfectly with your business
+                      objectives.
                     </p>
                   </div>
                 </motion.div>
@@ -127,8 +136,12 @@ export default function Home() {
                   <div className="">
                     <h2>Mobile Development</h2>
                     <p>
-                      Get an industry leading mobile application for your
-                      business to boost profitability.
+                      Our mobile development expertise covers both iOS and
+                      Android platforms. We design and develop mobile
+                      applications that provide seamless user experiences,
+                      incorporating the latest design trends and
+                      functionalities. From concept to deployment, we ensure
+                      your app stands out in the competitive app market.
                     </p>
                   </div>
                 </motion.div>
@@ -141,8 +154,12 @@ export default function Home() {
                   <div className="">
                     <h2>Chatbot Solutions</h2>
                     <p>
-                      Keep your prospects informed, engaged and connected
-                      without leaving their comfort zone through whatsApp.
+                      Transform your customer interactions with our advanced
+                      chatbot solutions. Brox Technology creates intelligent and
+                      interactive chatbots that engage users, answer inquiries,
+                      and assist in various tasks. Enhance customer support,
+                      lead generation, and user engagement through personalized
+                      and automated conversations.
                     </p>
                   </div>
                 </motion.div>
@@ -158,9 +175,11 @@ export default function Home() {
                   <div className="">
                     <h2>Bulk SMS</h2>
                     <p>
-                      Keep your customers and clients updated on your services
-                      and products through sms. It’s Fast and Reliable. Try Brox
-                      Bulk SMS today.
+                      Stay connected with your audience through our Bulk SMS
+                      services. Brox Technology enables you to send important
+                      updates, promotions, and notifications to a wide recipient
+                      base instantly. Our reliable and scalable platform ensures
+                      your messages reach the right people at the right time.
                     </p>
                   </div>
                 </motion.div>
@@ -173,9 +192,12 @@ export default function Home() {
                   <div className="">
                     <h2>UI/UX Design</h2>
                     <p>
-                      Keep your customers and clients updated on your services
-                      and products through sms. It’s Fast and Reliable. Try Brox
-                      Bulk SMS today.
+                      Exceptional user interface (UI) and user experience (UX)
+                      design are crucial for engaging and retaining customers.
+                      Brox Technology&apos;s design team crafts visually
+                      appealing, intuitive, and user-centric interfaces that
+                      enhance usability and create memorable interactions,
+                      ultimately boosting customer satisfaction.
                     </p>
                   </div>
                 </motion.div>
@@ -190,8 +212,12 @@ export default function Home() {
                   />
                   <h2>Branding</h2>
                   <p>
-                    Own an awesome and user friendly website accross all
-                    platform to have a presence in the digital world.
+                    Establish a strong and memorable brand identity with Brox
+                    Technology&apos;s branding services. We collaborate with you
+                    to develop a unique brand strategy, including logo design,
+                    color palettes, typography, and brand guidelines. Let us
+                    help you create a consistent and impactful brand presence
+                    across all touchpoints.
                   </p>
                 </motion.div>
 
@@ -203,9 +229,13 @@ export default function Home() {
                   <div className="">
                     <h2>USSD (Short Code) Solutions</h2>
                     <p>
-                      Let your customers place orders for your products using a
-                      USSD code and make payment via Mobile Money directly from
-                      the USSD.
+                      Unstructured Supplementary Service Data (USSD) is a
+                      powerful tool for interactive communication. Brox
+                      Technology offers USSD solutions that enable real-time
+                      interactions between users and your services, such as
+                      balance inquiries, service activations, and surveys,
+                      fostering direct engagement without the need for internet
+                      connectivity.
                     </p>
                   </div>
                 </motion.div>
@@ -218,9 +248,12 @@ export default function Home() {
                   <div className="">
                     <h2>Mobile Money Integration</h2>
                     <p>
-                      Collect payment officially using mobile money and reach
-                      wide audience. We help you to integrate MoMo into your
-                      service offerings.
+                      Seamlessly integrate mobile money payment options into
+                      your applications with Brox Technology&apos;s expertise.
+                      We enable secure and convenient transactions, allowing
+                      your users to make payments, transfer funds, and perform
+                      financial activities through popular mobile money
+                      platforms.
                     </p>
                   </div>
                 </motion.div>
