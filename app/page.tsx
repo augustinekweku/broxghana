@@ -2,6 +2,7 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
+import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 
 import {
   headContentAnimation,
@@ -14,6 +15,10 @@ import { OUR_WORKS } from "./utils/constants";
 export default function Home() {
   return (
     <>
+      <TawkMessengerReact
+        propertyId="6399d18edaff0e1306dca286"
+        widgetId="1gk8dl5s7"
+      />
       <AnimatePresence>
         <main>
           <div>
