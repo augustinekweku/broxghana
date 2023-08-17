@@ -189,10 +189,10 @@ export default function Home() {
                     <p>
                       Exceptional user interface (UI) and user experience (UX)
                       design are crucial for engaging and retaining customers.
-                      Brox Technology's design team crafts visually appealing,
-                      intuitive, and user-centric interfaces that enhance
-                      usability and create memorable interactions, ultimately
-                      boosting customer satisfaction.
+                      Brox Technology&apos;s design team crafts visually
+                      appealing, intuitive, and user-centric interfaces that
+                      enhance usability and create memorable interactions,
+                      ultimately boosting customer satisfaction.
                     </p>
                   </div>
                 </motion.div>
@@ -208,8 +208,8 @@ export default function Home() {
                   <h2>Branding</h2>
                   <p>
                     Establish a strong and memorable brand identity with Brox
-                    Technology's branding services. We collaborate with you to
-                    develop a unique brand strategy, including logo design,
+                    Technology&apos;s branding services. We collaborate with you
+                    to develop a unique brand strategy, including logo design,
                     color palettes, typography, and brand guidelines. Let us
                     help you create a consistent and impactful brand presence
                     across all touchpoints.
@@ -244,9 +244,9 @@ export default function Home() {
                     <h2>Mobile Money Integration</h2>
                     <p>
                       Seamlessly integrate mobile money payment options into
-                      your applications with Brox Technology's expertise. We
-                      enable secure and convenient transactions, allowing your
-                      users to make payments, transfer funds, and perform
+                      your applications with Brox Technology&apos;s expertise.
+                      We enable secure and convenient transactions, allowing
+                      your users to make payments, transfer funds, and perform
                       financial activities through popular mobile money
                       platforms.
                     </p>
