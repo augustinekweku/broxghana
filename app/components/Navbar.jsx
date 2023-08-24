@@ -8,8 +8,8 @@ import clsx from "clsx";
 
 const Navbar = () => {
   let Links = [
-    { name: "Work", link: "#work" },
-    { name: "Services", link: "#services" },
+    { name: "Work", link: "#ourWorks" },
+    { name: "Services", link: "#coreServices" },
     { name: "About Us", link: "#aboutUs" },
   ];
   let [open, setOpen] = useState(false);
