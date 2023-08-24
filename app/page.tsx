@@ -60,7 +60,7 @@ export default function Home() {
             <section
               style={{ backgroundColor: "#f9fafb" }}
               className="ourWorksSection pb-14"
-              id="ourWork"
+              id="ourWorks"
             >
               <div className="container px-3 mx-auto pt-12">
                 <h2 className="text-2xl lg:text-4xl font-medium">Our Works</h2>
