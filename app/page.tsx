@@ -10,23 +10,54 @@ import {
   slideAnimation,
 } from "./utils/motion";
 import Image from "next/image";
-import { OUR_WORKS } from "./utils/constants";
+import { OUR_WORKS, OurWorks } from "./utils/constants";
+import { useRouter } from "next/navigation";
+import { useReducer } from "react";
+import VideoModal from "./components/VideoModal";
+import Footer from "./components/Footer";
+
+type StateType = {
+  projects: string[];
+  openVieoModal: boolean;
+  videoUrl: string;
+  videoThumbnail: string;
+};
 
 export default function Home() {
+  const router = useRouter();
+  const [state, updateState] = useReducer(
+    (state: StateType, newState: Partial<StateType>) => {
+      return { ...state, ...newState };
+    },
+    {
+      projects: Object.keys(OUR_WORKS),
+      openVieoModal: false,
+      videoUrl: "https://www.youtube.com/embed/7e90gBu4pas",
+      videoThumbnail: "",
+    }
+  );
+
   return (
     <>
       <TawkMessengerReact
         propertyId="6399d18edaff0e1306dca286"
         widgetId="1gk8dl5s7"
       />
+      <VideoModal
+        isOpen={state.openVieoModal}
+        videoUrl=""
+        onDismiss={() => {
+          updateState({ openVieoModal: false });
+        }}
+      />
+
       <AnimatePresence>
         <main>
           <div>
             {/* <!-- HEADER SECTION --> */}
             <header className="header">
-              <Navbar />
               <motion.section
-                className="container px-3 mx-auto pt-24"
+                className="container px-3 mx-auto "
                 {...slideAnimation("left")}
               >
                 <div className="w-100 lg:w-3/4 pt-20">
@@ -48,9 +79,31 @@ export default function Home() {
                       We’re building the future of technology
                     </motion.p>
                   </div>
-
-                  <div className="pb-20">
-                    <video src="" width="1030" className="w-100"></video>
+                </div>
+                <div className="pb-20">
+                  <div
+                    className=" flex justify-center items-center w-100 mt-[40px]"
+                    style={{
+                      backgroundImage: "url(/assets/images/img3.png)",
+                      height: "500px",
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                      opacity: "0.8",
+                    }}
+                  >
+                    <div>
+                      <img
+                        src="/assets/images/svg/play-icon.svg"
+                        alt=""
+                        className="cursor-pointer"
+                        onClick={() => {
+                          updateState({
+                            openVieoModal: true,
+                          });
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
               </motion.section>
@@ -66,18 +119,31 @@ export default function Home() {
                 <h2 className="text-2xl lg:text-4xl font-medium">Our Works</h2>
                 <div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-between items-center mt-5 Card1">
-                    {OUR_WORKS.map((work, index) => (
-                      <div key={index}>
+                    {state.projects.map((project: any, index) => (
+                      <div
+                        key={index}
+                        className="cursor-pointer"
+                        onClick={() => {
+                          router.push(
+                            `/our-works?project=${encodeURIComponent(project)}`
+                          );
+                        }}
+                      >
                         <div className="workImg">
                           <Image
-                            src={work.image}
+                            src={`/assets/images/${
+                              OUR_WORKS[project as keyof typeof OUR_WORKS]
+                                .thumbnail
+                            }`}
                             alt="img here"
                             loading="lazy"
                             objectFit="cover"
                             fill
                           />
                         </div>
-                        <h2 className="mt-2 text-base">{work.title}</h2>
+                        <h2 className="mt-2 text-base">
+                          {OUR_WORKS[project as keyof typeof OUR_WORKS].title}
+                        </h2>
                       </div>
                     ))}
                   </div>
@@ -274,9 +340,13 @@ export default function Home() {
                       About Us
                     </h2>
                     <p className="lg:text-2xl text-lg">
-                      We focus on Customer Commitment, Integrity, and Team work.
-                      Brox Technology is a privately owned company which was
-                      established in the year 2018. Our core values include
+                      Our core values include a dedication to innovation and
+                      excellence, as we continuously strive to push the
+                      boundaries of technology to deliver the best solutions for
+                      our customers. At Brox Technology, we believe in fostering
+                      a culture of continuous learning and growth, empowering
+                      our team members to evolve both professionally and
+                      personally.
                     </p>
                   </div>
 
@@ -291,39 +361,6 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <footer className="bg-black">
-              <section className="contactUs pb-14">
-                <div className=" container px-3 mx-auto pt-12">
-                  <div className=" conContainer flex flex-col lg:flex-row gap-5 pb-8 mb-8 items-start lg:items-center justify-between">
-                    <div className="con Info">
-                      <h2 className="!text-white text-xl lg:text-2xl xl:text-3xl   font-medium ">
-                        GET IN TOUCH
-                      </h2>
-                      <p className="pt-1 text-base">
-                        info@broxghana.com <br />
-                        +233 54 410 8998
-                      </p>
-                    </div>
-
-                    <div className="con Info">
-                      <h2 className="!text-white text-xl lg:text-2xl xl:text-3xl  font-medium">
-                        Brox Technologies
-                      </h2>
-                      <p className="pt-1 text-base">
-                        We focus on Customer Commitment, Integrity, and Team
-                        work.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="copyRight pt-3">
-                    <h2 className="!text-white text-xs">
-                      © 2022 Brox Technology. All Rights Reserved
-                    </h2>
-                  </div>
-                </div>
-              </section>
-            </footer>
           </div>
         </main>
       </AnimatePresence>

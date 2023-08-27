@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import {
   BookOpenIcon,
   Bars3BottomRightIcon,
@@ -14,16 +15,33 @@ const Navbar = () => {
   ];
   let [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    let hamburgerMenu = document.querySelector(".body_content");
+    if (open && hamburgerMenu) {
+      hamburgerMenu.classList.add("mobile_nav_open");
+    } else {
+      hamburgerMenu.classList.remove("mobile_nav_open");
+    }
+  }, [open]);
+
   return (
     <div
-      className="shadow-md w-full fixed top-0 left-0 bg-primary-blue z-50"
+      className={clsx(
+        "shadow-md w-full   top-0 left-0 bg-primary-blue z-50",
+        open ? "fixed" : ""
+      )}
       id="nav"
     >
       <div className="container mx-auto ">
         <div className="md:flex items-center justify-between  py-4 lg:px-0 px-7">
           {/* logo section */}
           <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
-            <div className="logo">
+            <div
+              className="logo"
+              onClick={() => {
+                window.location.href = "/";
+              }}
+            >
               <img src="/assets/images/broxtech-logo.svg" alt="logo here" />
             </div>
           </div>
