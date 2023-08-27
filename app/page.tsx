@@ -122,7 +122,7 @@ export default function Home() {
                     {state.projects.map((project: any, index) => (
                       <div
                         key={index}
-                        className="cursor-pointer"
+                        className="cursor-pointer mb-4"
                         onClick={() => {
                           router.push(
                             `/our-works?project=${encodeURIComponent(project)}`
