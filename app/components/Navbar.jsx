@@ -65,7 +65,13 @@ const Navbar = () => {
             }`}
           >
             {Links.map((link, i) => (
-              <li key={i} className="md:ml-8 md:my-0 my-7 ">
+              <li
+                key={i}
+                className="md:ml-8 md:my-0 my-7 "
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
                 <a
                   href={link.link}
                   className={clsx(
