@@ -122,7 +122,7 @@ export default function Home() {
                     {state.projects.map((project: any, index) => (
                       <div
                         key={index}
-                        className="cursor-pointer mb-4"
+                        className="cursor-pointer mb-4 border"
                         onClick={() => {
                           router.push(
                             `/our-works?project=${encodeURIComponent(project)}`
@@ -141,7 +141,7 @@ export default function Home() {
                             fill
                           />
                         </div>
-                        <h2 className="mt-2 text-base">
+                        <h2 className="mt-2 text-base p-3">
                           {OUR_WORKS[project as keyof typeof OUR_WORKS].title}
                         </h2>
                       </div>
