@@ -96,14 +96,16 @@ const Navbar = () => {
                 Academy<span className="new-badge">NEW</span>
               </a>
             </li>
-            <button
-              className={clsx(
-                open ? "mt-8 " : "",
-                "talkToUsBtn btn   md:ml-8 font-semibold px-4 py-2 rounded duration-500 md:static shadow-xl bg-blue-900 text-white lg:bg-gray-100 lg:text-blue-900 rounded-2xl"
-              )}
-            >
-              Talk to us
-            </button>
+            <a href="#contact">
+              <button
+                className={clsx(
+                  open ? "mt-8 " : "",
+                  "talkToUsBtn btn   md:ml-8 font-semibold px-4 py-2 rounded duration-500 md:static shadow-xl bg-blue-900 text-white lg:bg-gray-100 lg:text-blue-900 rounded-2xl"
+                )}
+              >
+                Talk to us
+              </button>
+            </a>
           </ul>
           {/* button */}
         </div>

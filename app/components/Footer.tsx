@@ -7,7 +7,7 @@ const Footer = () => {
         <section className="contactUs pb-14">
           <div className=" container px-3 mx-auto pt-12">
             <div className=" conContainer flex flex-col lg:flex-row gap-5 pb-8 mb-8 items-start lg:items-center justify-between">
-              <div className="con Info">
+              <div id="contact" className="con Info">
                 <h2 className="!text-white text-xl lg:text-2xl xl:text-3xl   font-medium ">
                   GET IN TOUCH
                 </h2>
@@ -29,7 +29,7 @@ const Footer = () => {
 
             <div className="copyRight pt-3">
               <h2 className="!text-white text-xs">
-                © 2022 Brox Technology. All Rights Reserved
+                © 2023 Brox Technology. All Rights Reserved
               </h2>
             </div>
           </div>
