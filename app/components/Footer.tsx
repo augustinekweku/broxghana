@@ -13,7 +13,7 @@ const Footer = () => {
                 </h2>
                 <p className="pt-1 text-base">
                   info@broxghana.com <br />
-                  +233 54 410 8998
+                  +233 50 253 5093
                 </p>
               </div>
 
@@ -29,7 +29,7 @@ const Footer = () => {
 
             <div className="copyRight pt-3">
               <h2 className="!text-white text-xs">
-                © 2023 Brox Technology. All Rights Reserved
+                © 2025 Brox Technology. All Rights Reserved
               </h2>
             </div>
           </div>
